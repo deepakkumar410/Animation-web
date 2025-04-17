@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html,
+body {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.draw-path path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  stroke-width: 0;
+  animation:
+    drawPath 10s ease-in-out forwards,
+    growStroke 4s ease-in-out forwards;
+}
+
+
+@keyframes drawPath {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes growStroke {
+  0% {
+    stroke-width: 0;
+  }
+
+  100% {
+    stroke-width: 1.5;
+  }
+}
+@media (max-width: 768px) {
+  /* SVG and container */
+  .draw-path {
+    position: relative;
+    top: 13rem;
+    height: 25vh;
+    width: 100%;
+    left: -8px;
+  }
+  .draw-path path{
+    stroke-width: .1;
+  }
+
+  #first-text {
+    width: 90% !important;
+    left: 5% !important;
+    top: 8rem !important;
+    text-align: center;
+  }
+  #first-text h1 span{
+   font-size: 20px;
+  }
+  #first-text>h1{
+    font-size: 15px;
+  }
+#img1,#img2{
+  display: none;
+}
+#all-cercle{
+  position: static;
+  top: 0px;
+  left: 0px;
+  height: 40vh;
+}
+#third-cercle,#fourth-cercle,#sec-cercle,#first-cercle,#six-cercle,#five-cercle{
+  position: static;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+
+}
+
+#container-cercle2,#container-cercle3{
+  padding-top: 0px;
+}
+  #first-text h1 {
+    font-size: 24px !important;
+    line-height: 30px !important;
+  }
+ #first-container{
+  position: absolute;
+  left:0px;
+  top:20rem; 
+ }
+  #text-2 {
+    
+    position: absolute;
+    font-size: 10px !important;
+    line-height: 20px !important;
+    top: -30px !important;
+    left: 160px;
+  }
+
+  #text-2 span {
+    font-size: 28px !important;
+  }
+
+  #img1,
+  #img2 {
+    width: 80px;
+    height: auto;
+    top: 0px !important;
+    left: 0px !important;
+  }
+
+ 
+  #img-text2 {
+    position: relative;
+    width: 70px !important;
+    font-size: 20px !important;
+    height: 20px !important;
+    top: -20px !important;
+    left: 50px;
+  }
+  #img-text1 p,#img-text2 p{
+    font-size: 12px;
+    position: relative;
+  }
+  #img-text1{
+    width: 70px !important;
+    height: 20px !important;
+    position: relative;
+    top: -20px !important;
+    left: 60px;
+    
+  }
+
+  /* Layout adjustments */
+
+
+  #first-cercle,
+  #sec-cercle,
+  #third-cercle,
+  #fourth-cercle,
+  #five-cercle,
+  #six-cercle{
+    transform: scale(0.5);
+  }
+#first-cercle{
+  position: relative;
+  top: 10px;
+  left: -20px;
+ }
+#sec-cercle{
+  position: relative;
+  top: 10px;
+  left: 20px;
+ }
+#third-cercle{
+  position: relative;
+  top: -10px;
+  left: -70px;
+ }
+#fourth-cercle{
+  position: relative;
+  top: -10px;
+  left: 85px;
+ }
+#five-cercle{
+  position: relative;
+  top: -60px;
+  left: -30px;
+ }
+ #five-cercle p{
+  position: relative;
+  right: 20px;
+  
+ }
+#six-cercle{
+  position: relative;
+  top: -65px;
+  left: 40px;
+ }
+ #six-cercle p{
+  position: relative;
+  right: 0px;
+  left: -40px;
+ }
+ 
+}
