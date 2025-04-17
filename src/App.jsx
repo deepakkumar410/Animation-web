@@ -117,10 +117,8 @@ const InfinityDraw = () => {
                 </div>
               </div>
               <div>
-                <p id='text-2' className="text-[45px] text-center font-bold text-transparent relative top-[120px] left-[20px] leading-[50px]"
-                  style={{
-                    WebkitTextStroke: '1.8px white ',
-                  }}>
+                <p id='text-2' className="text-[45px] text-center font-bold text-white relative top-[120px] left-[20px] leading-[50px]"
+                  >
                   <span className='text-[90px]'>AI</span> <br /> AGENTS
                 </p>
               </div>
